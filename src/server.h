@@ -1620,6 +1620,7 @@ struct redisServer {
     int enable_debug_cmd;            /* Enable DEBUG commands, see PROTECTED_ACTION_ALLOWED_* */
     int enable_module_cmd;           /* Enable MODULE commands, see PROTECTED_ACTION_ALLOWED_* */
     int debug_client_enforce_reply_list;      /* Force client to always use the reply list */
+    int debug_force_tls_write_error;
 
     /* RDB / AOF loading information */
     volatile sig_atomic_t loading; /* We are loading data from disk if true */
